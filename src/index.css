@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+ 
+
+@layer components {
+    .whole_background{
+        @apply bg-gradient-to-r from-[#5f1b5f] to-[#061D42] tracking-[0px]
+    }
+
+    .page-padding{
+        @apply md:px-24 px-4
+    }
+
+    .page-margin{
+        @apply md:mx-24 mx-4
+    }
+
+
+    .page-padding-top{
+        @apply pt-[120px]
+    }
+    
+
+    .big-button{
+        @apply  sm:h-[60px] sm:w-[205px] h-[50px] w-[170px] text-xl rounded-lg shadow-sm shadow-black
+    }
+
+    .blue-pink{
+        @apply text-white bg-gradient-to-r from-[#dd43aa] to-[#1451b4]
+    }
+
+
+    .pink-blue-bg{
+        @apply text-white lg:bg-gradient-to-b bg-gradient-to-tr lg:from-white/0 from-[#144594] to-[#dd43aa] lg:to-[#aa32aa]
+    }
+
+    .blue-pink-bg{
+        @apply text-white lg:bg-gradient-to-b bg-gradient-to-tr lg:from-white/0 from-[#dd43aa] to-[#1451b4] lg:to-[#1451b4]
+    }
+}
