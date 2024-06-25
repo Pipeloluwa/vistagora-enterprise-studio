@@ -9,7 +9,7 @@ export const HomeLoading= () => {
   const { progress } = useProgress();
   const dispatch= useDispatch();
 
-  if (progress >= 100){
+  if (progress >= 1){
     dispatch(setModelLoaded());
   }
 
