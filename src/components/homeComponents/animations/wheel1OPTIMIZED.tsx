@@ -2,7 +2,6 @@ import { Html, OrbitControls, PresentationControls,  } from '@react-three/drei';
 import { useFrame, useLoader, useThree } from '@react-three/fiber';
 import React, { LegacyRef, Suspense, useEffect, useRef, useState } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { Loading } from '../../loading';
 import * as THREE from 'three';
 import { RootState } from '../../../state_management/store';
 import { useDispatch, useSelector } from 'react-redux';
@@ -156,7 +155,7 @@ const Wheel1OPTIMIZED:React.FC<ComponentProps> = ({props}) => {
     },[]);
 
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={null}>
             <ambientLight intensity={10.0}/>
             <PresentationControls rotation={[0, 2.35, 0]}>
                 <group ref= {wheelRef} scale= {0.1} position= {[0, -0.3, 0]}>

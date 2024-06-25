@@ -1,7 +1,6 @@
 import { Plane } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import React, { LegacyRef, Suspense, useEffect, useRef } from 'react';
-import { Loading } from '../../loading';
 import * as THREE from 'three';
 import { useDispatch } from 'react-redux';
 import { mouse_plane_clickSwitch } from '../../../state_management/reducers/mouse_plane';
@@ -50,7 +49,7 @@ const PlaneBackground:React.FC<ComponentProps> = ({props}) => {
 
 
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={null}>
             <ambientLight intensity={2}/>
             <pointLight ref={lightRef} intensity={100.0} position={[-0.5, 0, -60]}/>
 

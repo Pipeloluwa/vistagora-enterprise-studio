@@ -2,7 +2,6 @@ import { PresentationControls } from '@react-three/drei';
 import { useFrame, useLoader, useThree } from '@react-three/fiber';
 import { LegacyRef, Suspense, useEffect, useRef, useState } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { Loading } from '../../loading';
 import * as THREE from 'three';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../state_management/store';
@@ -77,7 +76,7 @@ const Camera:React.FC<ComponentProps> = ({props}) => {
     
 
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={null}>
             <pointLight ref={lightRef} intensity={500} position={[0, 0, 9]}/>
 
             <PresentationControls 

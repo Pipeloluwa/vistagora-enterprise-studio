@@ -2,8 +2,9 @@ import { OrbitControls } from '@react-three/drei';
 import { useFrame, useLoader } from '@react-three/fiber';
 import { LegacyRef, Suspense, useRef} from 'react'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { Loading } from '../../loading';
 import * as THREE from 'three';
+
+
 const ROom1OPTIMIZED = () => {
     const roomRef:LegacyRef<THREE.Group> | null = useRef(null);
     const {nodes, materials}= useLoader(GLTFLoader, "/models/room1/scene.gltf")
@@ -14,9 +15,10 @@ const ROom1OPTIMIZED = () => {
         }  
 
     });
+    
 
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={null}>
             <ambientLight intensity={30.0}/>
             <group ref= {roomRef} scale= {1} position= {[0, -2, 0]}>
 

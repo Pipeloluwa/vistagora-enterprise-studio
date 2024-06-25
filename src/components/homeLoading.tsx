@@ -1,6 +1,7 @@
 import { Html, useProgress } from "@react-three/drei";
 import { useDispatch } from "react-redux";
 import { setModelLoaded } from "../state_management/reducers/modelsLoaded";
+import { useEffect } from "react";
 
 
 
@@ -9,9 +10,16 @@ export const HomeLoading= () => {
   const { progress } = useProgress();
   const dispatch= useDispatch();
 
-  if (progress >= 1){
+
+  function loadingCompleted (){
     dispatch(setModelLoaded());
   }
+
+  useEffect(() => {
+
+    return loadingCompleted;
+  }, []);
+  
 
   return(
     <Html>

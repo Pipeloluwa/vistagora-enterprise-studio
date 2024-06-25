@@ -1,7 +1,6 @@
 import { useFrame, useLoader, } from '@react-three/fiber';
 import { LegacyRef, Suspense, useRef } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { Loading } from '../../loading';
 import * as THREE from 'three';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../state_management/store';
@@ -81,7 +80,7 @@ const MouseRipple = () => {
 
 
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={null}>
             <ambientLight intensity={2}/>
             <pointLight ref={lightRef} intensity={100.0} position={[-0.5, 0, -60]}/>
 
