@@ -1,6 +1,6 @@
 import { LegacyRef, useEffect, useRef } from 'react'
 import Footer from '../components/footer'
-import { motion, useInView } from 'framer-motion' 
+import { AnimatePresence, motion, useInView } from 'framer-motion' 
 import { setNavType } from "../state_management/reducers/nav_type_state";
 import { useDispatch } from 'react-redux';
 
@@ -84,41 +84,44 @@ export default function Tech () {
 
 
                         <div className='overflow-hidden grid md:grid-cols-2 items-center justify-center gap-x-4 gap-y-8 w-full h-full'>
-                            {
-                                serviceProduct.map((items, index) => { 
-                                        if (tracker === 3){
-                                            bgColor= bgColor === "bg-blue-500" ? bgColor= "bg-blue-500" : "bg-purple-500";                                 
-                                            tracker= 1;
-                                        }
-                                        else{
-                                            bgColor= bgColor === "bg-blue-500" ? bgColor= "bg-purple-500" : "bg-blue-500";
-                                        }
-                                        tracker+= 1;
-                                
-                                        return(
-                                                <motion.div 
-                                                key={`techServiceProductMotionKey${index}`}
-                                                viewport={{once: true}}
-                                                initial= {{x:index % 2 ? 300 : -300, rotate:index % 2 ? 50 : -50, visibility:"hidden"}}
-                                                whileInView={{x:0, rotate:0, visibility:"visible"}}
-                                                transition={{duration:1.5, delay:1}}
-                                                className={` h-[250px]  p-2 flex flex-col items-center justify-center gap-y-3 text-white ${ bgColor } ${index === serviceProduct.length-1 && (index + 1) % 2 !== 0 ? "md:col-span-2": ""} rounded-xl shadow-md shadow-black/20`}>
-                                                <div className='overflow-hidden flex items-center justify-center size-28 bg-white p-4 rounded-full shadow-sm shadow-black'>
-                                                    <img src={items.imageUrl} alt="" className='w-[65px]'/>
-                                                </div>
+                            <AnimatePresence key={"techAnimationPresenceServices"}>
+                                {
+                                    serviceProduct.map((items, index) => { 
+                                            if (tracker === 3){
+                                                bgColor= bgColor === "bg-blue-500" ? bgColor= "bg-blue-500" : "bg-purple-500";                                 
+                                                tracker= 1;
+                                            }
+                                            else{
+                                                bgColor= bgColor === "bg-blue-500" ? bgColor= "bg-purple-500" : "bg-blue-500";
+                                            }
+                                            tracker+= 1;
+                                    
+                                            return(
+                                                    <motion.div 
+                                                    key={`techServiceProductMotionKey${index}`}
+                                                    viewport={{once: true}}
+                                                    initial= {{x:index % 2 ? 300 : -300, rotate:index % 2 ? 50 : -50, visibility:"hidden"}}
+                                                    whileInView={{x:0, rotate:0, visibility:"visible"}}
+                                                    transition={{duration:1.5, delay:1}}
+                                                    className={` h-[250px]  p-2 flex flex-col items-center justify-center gap-y-3 text-white ${ bgColor } ${index === serviceProduct.length-1 && (index + 1) % 2 !== 0 ? "md:col-span-2": ""} rounded-xl shadow-md shadow-black/20`}>
+                                                    <div className='overflow-hidden flex items-center justify-center size-28 bg-white p-4 rounded-full shadow-sm shadow-black'>
+                                                        <img src={items.imageUrl} alt="" className='w-[65px]'/>
+                                                    </div>
 
-                                                <h1 className='text-center font-semibold'>
-                                                    {serviceProduct[index].title}
-                                                </h1>
+                                                    <h1 className='text-center font-semibold'>
+                                                        {serviceProduct[index].title}
+                                                    </h1>
 
-                                                <p className='flex text-center text-sm '>
-                                                    {serviceProduct[index].description}
-                                                </p>
-                                            </motion.div>  
-                                        )
-                                    }                          
-                                )
-                            }
+                                                    <p className='flex text-center text-sm '>
+                                                        {serviceProduct[index].description}
+                                                    </p>
+                                                </motion.div>  
+                                            )
+                                        }                          
+                                    )
+                                }
+                            </AnimatePresence>
+
                         </div>
 
                         
@@ -153,27 +156,28 @@ export default function Tech () {
 
 
                             <div className='grid md:grid-cols-3 items-center justify-center gap-x-4 gap-y-8 w-full h-full'>
-                                
-                                {trainingProduct.map((item, index) => 
-                                
-                                
-                                    <motion.div 
-                                        key={`techTrainingProduct${index}`}
-                                        initial= {{x:-200, rotate:-50, visibility:"hidden"}}
-                                        animate={{x:trainingView ? 0 : -200, rotate: trainingView ? 0 : -50, visibility: trainingView ? "visible" : "hidden"}}
-                                        transition={{duration:1.5, delay: 0.6}}
-                                        className='flex flex-col items-center justify-center gap-y-2'>
-                                        <div className='overflow-hidden flex items-center justify-center size-28 bg-white p-4 rounded-full shadow-sm shadow-black'>
-                                            <img src={item.imageUrl} alt="" className='w-[65px]'/>
-                                        </div>
+                                <AnimatePresence key={"techAnimationPresenceProducts"}>
 
-                                        <h1 className='text-center font-medium'>
-                                            {item.title}
-                                        </h1>
+                                    {trainingProduct.map((item, index) => 
+                                    
+                                    
+                                        <motion.div 
+                                            key={`techTrainingProduct${index}`}
+                                            initial= {{x:-200, rotate:-50, visibility:"hidden"}}
+                                            animate={{x:trainingView ? 0 : -200, rotate: trainingView ? 0 : -50, visibility: trainingView ? "visible" : "hidden"}}
+                                            transition={{duration:1.5, delay: 0.6}}
+                                            className='flex flex-col items-center justify-center gap-y-2'>
+                                            <div className='overflow-hidden flex items-center justify-center size-28 bg-white p-4 rounded-full shadow-sm shadow-black'>
+                                                <img src={item.imageUrl} alt="" className='w-[65px]'/>
+                                            </div>
 
-                                    </motion.div>
-                                )}
+                                            <h1 className='text-center font-medium'>
+                                                {item.title}
+                                            </h1>
 
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                                 
 
 

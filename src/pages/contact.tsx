@@ -24,7 +24,8 @@ export default function Contact () {
             <img src="/images/contact.webp" alt=""  className='flex w-full h-full object-cover fixed'/>
             <div className='fixed left-0 right-0 top-0 bottom-0 bg-gradient-to-b from-[#0748b1] to-[#7e1f5e] opacity-[85%]'/>
 
-            <div className='md:pt-[180px] pt-[130px] gap-y-8  flex flex-col absolute left-0 right-0 top-0 bottom-0 w-full h-full'>
+            <div className='md:pt-[180px] pt-[130px] gap-y-8 flex flex-col absolute left-0 right-0 top-0 bottom-0 w-full h-full'>
+                
                 <div className='gap-y-10 page-padding flex flex-col w-full'>
                     <motion.h1 
                         viewport={{once:true}}
@@ -42,7 +43,7 @@ export default function Contact () {
                         whileInView={{y:0, visibility:'visible'}}
                         transition={{duration:1.5, delay:0.5}}
 
-                        className='mx-auto text-center text-white flex md:text-[16px] text-sm '>
+                        className='mx-auto text-center text-white flex ext-[16px] '>
                         Have a question or want to reach us? We are here for you !
                     </motion.p>
                 </div>
@@ -54,9 +55,9 @@ export default function Contact () {
                     initial= {{y:300, visibility:'hidden'}}
                     whileInView={{y:0, visibility:'visible'}}
                     transition={{duration:1.5, delay:0.5}}
-                    className= "page-padding mx-auto text-sm flex flex-col items-center gap-y-4">
+                    className= "page-padding mx-auto text-sm flex flex-col md:items-center gap-y-4">
 
-                    <div className='flex gap-x-12 gap-y-4 md:flex-row flex-col-reverse items-center'>
+                    <div className='flex gap-x-12 gap-y-4 md:flex-row flex-col-reverse md:items-center'>
                         <a href='mailto:vistagoraenterprise@gmail.com' className= "z-10 flex items-center gap-x-2 text-white cursor-pointer" >
                             <IoIosMail className='md:size-[50px] size-[30px]'/>
                             <h1 className='underline'>
@@ -78,7 +79,7 @@ export default function Contact () {
                     <div className= "flex sm:items-center justify-center sm:gap-x-2 text-white">
                         <IoLocationSharp className='md:size-[38px] size-[30px]'/>
                         
-                        <h1 className='text-center flex sm:max-w-full  max-w-[300px] w-full'>
+                        <h1 className=' flex sm:max-w-full max-w-[300px] w-full'>
                             KBK Plaza, Tunji TOpe Hill Morgan Estate Phase 2, Grammar School Lagos, Lagos, Nigeria
                         </h1>
                     </div>

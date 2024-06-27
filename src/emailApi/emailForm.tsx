@@ -104,7 +104,7 @@ export const EmailFormApi = () => {
 
             <form ref={form} onSubmit={sendEmail} className="flex flex-col h-full justify-between pt-4 gap-y-3">
 
-                <input name='subject' value={"CONTACT US"} className='hidden'/>
+                <input name='subject' defaultValue={"CONTACT US"} className='hidden'/>
     
                 <input ref= {nameRef} type="text" name="from_name" placeholder='Name' className='p-4 h-[60px] outline-none focus:ring-2 focus:ring-inset focus:ring-pink-400  rounded-xl placeholder:text-black shadow-sm shadow-gray-500'/>
 
