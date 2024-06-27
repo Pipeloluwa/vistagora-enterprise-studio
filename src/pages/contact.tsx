@@ -6,6 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { EmailFormApi } from '../emailApi/emailForm';
 import { setNavType } from "../state_management/reducers/nav_type_state";
 import { useDispatch } from 'react-redux';
+import { IoLocationSharp } from 'react-icons/io5';
 
 export default function Contact () {
     const dispatch= useDispatch();
@@ -53,20 +54,32 @@ export default function Contact () {
                     initial= {{y:300, visibility:'hidden'}}
                     whileInView={{y:0, visibility:'visible'}}
                     transition={{duration:1.5, delay:0.5}}
-                    className= "page-padding mx-auto text-sm flex md:flex-row flex-col-reverse items-center gap-x-12">
+                    className= "page-padding mx-auto text-sm flex flex-col items-center gap-y-4">
 
-                    <a href='mailto:vistagoraenterprise@gmail.com' className= "z-10 flex items-center gap-x-2 text-white cursor-pointer" >
-                        <IoIosMail className='md:size-[50px] size-[30px]'/>
-                        <h1>
-                            vistagoraenterprise@gmail.com
-                        </h1>
-                    </a>
+                    <div className='flex gap-x-12 gap-y-4 md:flex-row flex-col-reverse items-center'>
+                        <a href='mailto:vistagoraenterprise@gmail.com' className= "z-10 flex items-center gap-x-2 text-white cursor-pointer" >
+                            <IoIosMail className='md:size-[50px] size-[30px]'/>
+                            <h1 className='underline'>
+                                vistagoraenterprise@gmail.com
+                            </h1>
+                        </a>
 
 
-                    <div className= "flex items-center gap-x-2 text-white">
-                        <FaWhatsapp className='md:size-[38px] size-[30px]'/>
-                        <h1>
-                            +234 9027931880
+                        <div className= "flex items-center gap-x-2 text-white">
+                            <FaWhatsapp className='md:size-[38px] size-[30px]'/>
+                            <h1>
+                                +234 9027931880
+                            </h1>
+                        </div>
+                    </div>
+
+
+
+                    <div className= "flex sm:items-center justify-center sm:gap-x-2 text-white">
+                        <IoLocationSharp className='md:size-[38px] size-[30px]'/>
+                        
+                        <h1 className='text-center flex sm:max-w-full  max-w-[300px] w-full'>
+                            KBK Plaza, Tunji TOpe Hill Morgan Estate Phase 2, Grammar School Lagos, Lagos, Nigeria
                         </h1>
                     </div>
 

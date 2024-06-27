@@ -159,10 +159,9 @@ export default function Media () {
                                     
                                     <motion.div 
                                         key={`mediaTrainingProduct${index}`}
-                                        // viewport={{once: true, root: trainingRef}}
-                                        initial= {{x:-300, rotate:-50, visibility:"hidden"}}
-                                        animate={{x:trainingView ? 0 : -300, rotate: trainingView ? 0 : -50, visibility: trainingView ? "visible" : "hidden"}}
-                                        transition={{duration:1.5, delay:1}}
+                                        initial= {{x:-200, rotate:-50, visibility:"hidden"}}
+                                        animate={{x:trainingView ? 0 : -200, rotate: trainingView ? 0 : -50, visibility: trainingView ? "visible" : "hidden"}}
+                                        transition={{duration:1.5, delay: 0.6}}
                                         className='flex flex-col items-center justify-center gap-y-2'>
                                         <div className='overflow-hidden flex items-center justify-center size-28 bg-white p-4 rounded-full shadow-sm shadow-black'>
                                             <img src={item.imageUrl} alt="" className='w-[65px]'/>
