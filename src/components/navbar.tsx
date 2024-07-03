@@ -107,7 +107,7 @@ export default function Navbar()  {
         }
     
       <div className={`${navBgValue ? "shadow-xl shadow-blue-500 bg-gradient-to-r from-[#1352b9]/40 to-[#b834b8]/40 backdrop-blur-md" : "bg-transparent "} z-50 flex fixed md:px-10 px-4 left-0 right-0 py-2 items-center w-full h-20`}>
-          <img onClick={() => {navigateHome(navigateVar)}} alt="home logo" src="/images/logo/VISTAGORA ENTERPRISE LOGO TRANSPARENT2.webp" ref={ripple} onPointerDown={rippleEvent} className='cursor-pointer size-[90px]' />
+          <img onClick={() => {navigateHome(navigateVar)}} alt="home logo" src="/images/logo/LOGO.webp" ref={ripple} onPointerDown={rippleEvent} className='cursor-pointer size-[60px]' />
 
           <ul className='font-semibold lg:flex w-full justify-center hidden text-white gap-x-8'>
               <li onClick={() => {navigateHome(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'home' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'home' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>

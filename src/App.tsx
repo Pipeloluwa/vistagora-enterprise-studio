@@ -72,7 +72,7 @@ function App() {
       <motion.div 
       initial= {{visibility: 'hidden'}}
       whileInView={{visibility: 'visible'}} 
-      className='fixed left-0 right-0 top-0 bottom-0 flex h-screen'>
+      className='md:flex hidden fixed left-0 right-0 top-0 bottom-0  h-screen'>
       
           <Canvas camera={{fov:5, position:[0, 0, 0]}} ref={canvasRef31} className='fixed h-full w-full'>
               <PlaneBackground props={canvasRef31}/>
@@ -115,7 +115,7 @@ function App() {
       <motion.div 
       initial= {{visibility: 'hidden'}}
       whileInView={{visibility: 'visible'}} 
-      className='pointer-events-none fixed left-0 right-0 top-0 bottom-0 flex h-screen'>
+      className='pointer-events-none md:flex hidden fixed left-0 right-0 top-0 bottom-0 h-screen'>
       
           <Canvas camera={{fov:5, position:[0, 0, 0]}}  className='h-full w-full'>
               <MouseRipple />
