@@ -53,7 +53,7 @@ export default function Home(){
                     <div className='flex w-full h-screen'>
 
                         <Canvas className='absolute left-0 right-0 top-0 bottom-0 flex h-full w-full overflow-hidden' ref={canvasRef1} camera={{fov:70, position: [0, 2, 30]}}>
-                            <Suspense fallback={<HomeLoading />}>
+                            <Suspense fallback={null}>
                                <ROom1OPTIMIZED /> 
                             </Suspense>
                               
