@@ -79,9 +79,9 @@ export const LandingPage= () => {
                         <motion.div 
                             key={"landingPageAnimatePresence4"}
                             initial={{opacity:0, x:-100}} animate={{opacity:1, x:0,}} transition={{duration:6, delay:3.5, ease:easeInOut, type:"spring", bounce: 0.5}}
-                            className='flex lg:w-auto w-full lg:justify-start justify-center'>
+                            className='lg:mt-0 md:-mt-3 mt-0 flex lg:w-auto w-full lg:justify-start justify-center'>
                             
-                            <Button onClick={() => {navigateAbout(navigateVar)}} className='text-lg big-button blue-pink' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
+                            <Button onClick={() => {navigateAbout(navigateVar)}} className='lg:big-button big-button md:text-sm md:small-button text-lg blue-pink' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
                                 Read More
                             </Button>
                         </motion.div>
