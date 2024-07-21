@@ -47,10 +47,10 @@ export default function Home(){
                 <img src="/images/media/8.webp" alt="" className='opacity-[5%] object-cover absolute left-0 right-0 top-0 bottom-0 flex w-full h-full' />
        
 
-                <div className='overflow-hidden relative flex h-screen w-full'>
+                <div className='overflow-hidden relative flex min-h-screen w-full'>
                     
 
-                    <div className='flex w-full h-screen'>
+                    <div className='flex w-full min-h-screen'>
 
                         <Canvas className='absolute left-0 right-0 top-0 bottom-0 flex h-full w-full overflow-hidden' ref={canvasRef1} camera={{fov:70, position: [0, 2, 30]}}>
                             <Suspense fallback={null}>
@@ -61,7 +61,7 @@ export default function Home(){
                     </div>
 
 
-                    <div className=' overflow-hidden subpixel-antialiased dark:bg-gray-900 dark:text-gray-300 bg-black/40 h-screen w-full absolute left-0 right-0 top-0 bottom-0 px-10'>
+                    <div className=' overflow-hidden subpixel-antialiased dark:bg-gray-900 dark:text-gray-300 bg-black/40 min-h-screen w-full absolute left-0 right-0 top-0 bottom-0 px-10'>
 
                         {/* TITLES */}
                         
@@ -71,7 +71,7 @@ export default function Home(){
 
             
 
-                    <div className='absolute left-0 right-0  top-0 bottom-0 flex h-screen'>
+                    <div className='absolute left-0 right-0  top-0 bottom-0 flex min-h-screen'>
                     
                         <Canvas camera={{fov:5, position:[0, 0, 0]}} ref={canvasRef4} className=' w-full'>
                             <Suspense fallback={<HomeLoading />}>

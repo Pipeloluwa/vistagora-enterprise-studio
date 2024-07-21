@@ -32,10 +32,6 @@
         @apply  sm:h-[60px] sm:w-[205px] h-[50px] w-[170px] text-xl rounded-lg shadow-sm shadow-black
     }
 
-    .small-button{
-        @apply  h-[50px] w-[170px] text-xl rounded-lg shadow-sm shadow-black
-    }
-
     .blue-pink{
         @apply text-white bg-gradient-to-r from-[#dd43aa] to-[#1451b4]
     }

@@ -24,13 +24,13 @@ export const LandingPage= () => {
     return (
         <>
 
-        <div className=" overflow-hidden lg:absolute relative lg:left-0 lg:right-0 top-[18%] lg:flex lg:items-start grid grid-rows-2 justify-center w-full h-screen"> 
+        <div className=" overflow-hidden lg:absolute relative lg:left-0 lg:right-0 top-[18%] lg:flex lg:items-start grid grid-rows-2 justify-center w-full min-h-screen"> 
 
             {
                 modelsLoaded 
                 ? 
     
-                <div className={`${wheelSwitchActionValue ? "animate-pulse" : "animate-none"} sm:gap-y-8 gap-y-4 lg:items-start lg:ml-12 items-center lg:absolute lg:left-0  lg:w-auto static lg:h-screen w-full flex z-20 overflow-hidden flex-col lg:mt-8`}>
+                <div className={`${wheelSwitchActionValue ? "animate-pulse" : "animate-none"} sm:gap-y-8 gap-y-4 lg:items-start lg:ml-12 items-center lg:absolute lg:left-0  lg:w-auto static lg:min-h-screen w-full flex z-20 overflow-hidden flex-col lg:mt-8`}>
                     <AnimatePresence key={"landingPageAnimatePresence"}>
 
                         <div key={"landingPageAnimatePresence1"} className="flex lg:w-auto w-full lg:items-start items-center flex-col gap-y-4">
@@ -66,7 +66,7 @@ export const LandingPage= () => {
                         <motion.div key={"landingPageAnimatePresence3"} initial={{opacity:0, y:100}} animate={{opacity:1, y:0,}} transition={{duration:5, delay:3.5, ease:easeInOut, type:"spring", bounce: 0.5}} >
                             <GlowCapture className='flex w-full h-full items-center justify-center '>
                                 <Glow color='purple' >
-                                    <p className='lg:w-[65%] sm:max-w-[70%] w-full lg:mx-0 mx-auto lg:flex-none flex lg:text-start text-center lg:text-xl md:text-md text-sm italic ease-linear translate-y-0 duration-[1500ms] text-white font-serif glow:bg-black glow:text-blue-500'>
+                                    <p className='lg:w-[65%] sm:max-w-[70%] w-[60%] lg:mx-0 mx-auto lg:flex-none flex lg:text-start text-center lg:text-xl md:text-md text-sm italic ease-linear translate-y-0 duration-[1500ms] text-white font-serif glow:bg-black glow:text-blue-500'>
                                         We believe in the transformative power of technology, the magic of music, and the captivating allure of visuals ...
                                     </p>
                                 </Glow>
@@ -79,9 +79,9 @@ export const LandingPage= () => {
                         <motion.div 
                             key={"landingPageAnimatePresence4"}
                             initial={{opacity:0, x:-100}} animate={{opacity:1, x:0,}} transition={{duration:6, delay:3.5, ease:easeInOut, type:"spring", bounce: 0.5}}
-                            className='lg:mt-0 md:-mt-3 mt-0 flex lg:w-auto w-full lg:justify-start justify-center'>
+                            className='flex lg:w-auto w-full lg:justify-start justify-center'>
                             
-                            <Button onClick={() => {navigateAbout(navigateVar)}} className='lg:big-button big-button md:text-sm md:small-button text-lg blue-pink' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
+                            <Button onClick={() => {navigateAbout(navigateVar)}} className='text-lg big-button blue-pink' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
                                 Read More
                             </Button>
                         </motion.div>
