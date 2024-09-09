@@ -12,8 +12,8 @@ const SlideShow = lazy(() => import('../components/homeComponents/slide_show'));
 const Services = lazy(() => import('../components/homeComponents/services'));
 const NewsLetter = lazy(() => import('../components/news_letter'));
 const Footer = lazy(() => import('../components/footer'));
+const CarouselImages = lazy(() => import('../components/homeComponents/carouselImages'));
 
-import CarouselImages from '../components/homeComponents/carouselImages';
 import { HomeLoading } from '../components/homeLoading';
 import { Spinner } from '@material-tailwind/react';
 import { RootState } from '../state_management/store';

@@ -90,7 +90,7 @@ const MouseRipple = () => {
                     object={
                         model_file.scene
                     }
-                    scale= {0.2}
+                    scale= {0.15}
                     position= {[0, 0, -60]}
                     ref= {ModelRef}
                 />

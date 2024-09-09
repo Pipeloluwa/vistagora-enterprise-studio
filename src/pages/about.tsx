@@ -13,8 +13,7 @@ export default function About () {
 
 
   return (
-    <div>
-        
+    <div>       
         <div className='relative h-screen '>
             <img src="/images/about.webp" alt=""  className='flex w-full h-full object-cover fixed'/>
             <div className='fixed left-0 right-0 top-0 bottom-0 bg-gradient-to-b from-[#0748b1] to-[#7e1f5e] opacity-[85%]'/>
@@ -97,8 +96,6 @@ export default function About () {
                 className='bg-black fixed left-0 right-0 top-0 bottom-0'/>
             
         </div>
-
-
 
         
     </div>

@@ -6,11 +6,6 @@ import ClashDisplay_Regular_TTF from './assets/fonts/clash/fonts/ClashDisplay-Re
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './pages/home';
-import About from './pages/about';
-import Tech from './pages/tech';
-import Music from './pages/music';
-import Media from './pages/media';
-
 
 import { LegacyRef, useEffect, useRef } from 'react'
 import { setNavBg } from './state_management/reducers/nav_bg_state';
@@ -19,8 +14,13 @@ import { Canvas } from '@react-three/fiber';
 import PlaneBackground from './components/homeComponents/animations/plane_background';
 import MouseRipple from './components/homeComponents/animations/mouse_ripple';
 import ScrollToTop from './scrollToTop';
-import Contact from './pages/contact';
 import { useDispatch } from 'react-redux';
+
+import About from './pages/about';
+import Tech from './pages/tech';
+import Music from './pages/music';
+import Media from './pages/media';
+import Contact from './pages/contact';
 import Error404 from './pages/Error404';
 
 
@@ -55,8 +55,8 @@ function App() {
           @font-face {
             font-family: 'ClashDisplay-Regular';
             src: url(${ClashDisplay_Regular_Woff2}) format('woff2'),
-                url(${ClashDisplay_Regular_Woff}) format('woff2'),
-                url(${ClashDisplay_Regular_TTF}) format('woff2');
+                url(${ClashDisplay_Regular_Woff}) format('woff'),
+                url(${ClashDisplay_Regular_TTF}) format('truetype');
             font-weight: 400;
             font-display: swap;
             font-style: normal;

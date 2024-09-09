@@ -49,7 +49,7 @@ const Wheel1OPTIMIZED:React.FC<ComponentProps> = ({props}) => {
     
 
     const wheelEvent1= async(event: MouseEvent) => {
-        let canvasBounds = canvasRef!.current!.getBoundingClientRect();
+        const canvasBounds = canvasRef!.current!.getBoundingClientRect();
         const x = ( ( event.clientX - canvasBounds!.left ) / ( canvasBounds!.right - canvasBounds!.left ) ) * 2 - 1;
         const y = - ( ( event.clientY - canvasBounds!.top ) / ( canvasBounds!.bottom - canvasBounds!.top) ) * 2 + 1;
         const current_mouse:THREE.Vector2= new THREE.Vector2( x, y );
@@ -171,8 +171,6 @@ const Wheel1OPTIMIZED:React.FC<ComponentProps> = ({props}) => {
                                 <mesh
                                     ref={plane_lambert4_0}
                                     name="plane_lambert4_0"
-                                    castShadow
-                                    receiveShadow
                                     geometry={(nodes.plane_lambert4_0 as THREE.Mesh).geometry}
                                     material={materials.lambert4}
                                 />
@@ -187,8 +185,6 @@ const Wheel1OPTIMIZED:React.FC<ComponentProps> = ({props}) => {
                                     <mesh
                                         ref={mount_lambert1_0}
                                         name="mount_lambert1_0"
-                                        castShadow
-                                        receiveShadow
                                         geometry={(nodes.mount_lambert1_0 as THREE.Mesh).geometry}
                                         material={materials.lambert1}
                                     />
@@ -199,8 +195,6 @@ const Wheel1OPTIMIZED:React.FC<ComponentProps> = ({props}) => {
                                 <group ref={wheelLambertRef} name="wheel" position={[0, 12.13, -2.205]} rotation={[0, 0, -1.697]}>
                                 <mesh
                                     name="wheel_lambert1_0"
-                                    castShadow
-                                    receiveShadow
                                     geometry={(nodes.wheel_lambert1_0 as THREE.Mesh).geometry}
                                     material={materials.lambert1}
                                 />

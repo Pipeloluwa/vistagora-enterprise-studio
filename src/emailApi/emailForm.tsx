@@ -1,5 +1,5 @@
 
-import React, { LegacyRef, useRef, useState } from 'react';
+import { FormEventHandler, LegacyRef, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Button, Dialog, DialogBody, Spinner } from '@material-tailwind/react';
 import { MdCancel, MdOutlineDone } from 'react-icons/md';
@@ -23,7 +23,7 @@ export const EmailFormApi = () => {
 
 
 
-  const sendEmail:React.FormEventHandler<HTMLFormElement> = (e) => {
+  const sendEmail:FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
     if (nameRef.current){
@@ -31,7 +31,7 @@ export const EmailFormApi = () => {
         if (nameRef.current.value.trim() !== "") {
             setFeedBack("");
         } else {
-        return setFeedBack("Please enter a name");
+            return setFeedBack("Please enter a name");
         }
     }
 
