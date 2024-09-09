@@ -16,7 +16,7 @@ const MouseRipple = () => {
     const lightRef:LegacyRef<THREE.PointLight> | null= useRef(null);
     const ModelRef:LegacyRef<THREE.Object3D> | null = useRef(null);
     const model_file= useLoader(GLTFLoader, "/models/mouse_ripple/scene.gltf")
-    let model_children: THREE.Mesh[]= [];
+    const model_children: THREE.Mesh[]= [];
 
 
     model_file.scene.traverse((child: THREE.Object3D) => {
@@ -90,7 +90,7 @@ const MouseRipple = () => {
                     object={
                         model_file.scene
                     }
-                    scale= {0.15}
+                    scale= {0.2}
                     position= {[0, 0, -60]}
                     ref= {ModelRef}
                 />
