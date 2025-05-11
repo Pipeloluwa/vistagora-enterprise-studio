@@ -28,12 +28,12 @@ const Credits= () => {
         >
 
             <DialogBody className='py-[150px] flex-col w-full items-center justify-center text-blue-800 text-2xl' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
-                <h1 className='text-center'>
+                <h1 className='z-40 text-center'>
                     Papic Pipeloluwa
                 </h1>
 
                 <div className='flex w-full items-center justify-center pt-2'>
-                    <a href='mailto:pipeloluwa14@gmail.com' className='text-sm text-center text-black'>
+                    <a href='z-40 mailto:pipeloluwa14@gmail.com' className='text-sm text-center text-black'>
                         pipeloluwa14@gmail.com
                     </a>
                 </div>

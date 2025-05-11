@@ -72,27 +72,27 @@ export default function Navbar()  {
                         
                         <ul className='flex flex-col gap-y-8 py-4 font-bold'>
 
-                          <li onClick={() => {closeDrawer_(); navigateHome(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'home' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'home' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+                          <li onClick={() => {closeDrawer_(); navigateHome(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'home' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'home' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                             Home
                           </li>
 
-                          <li onClick={() => {closeDrawer_(); navigateAbout(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'about' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'about' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+                          <li onClick={() => {closeDrawer_(); navigateAbout(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'about' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'about' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                             About
                           </li>
 
-                          <li onClick={() => {closeDrawer_(); navigateTech(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'tech' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'tech' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+                          <li onClick={() => {closeDrawer_(); navigateTech(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'tech' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'tech' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                             Tech
                           </li>
 
-                          <li onClick={() => {closeDrawer_(); navigateMusic(navigateVar)}}  className={`cursor-pointer ${navBgTypeLocal=== 'music' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'music' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+                          <li onClick={() => {closeDrawer_(); navigateMusic(navigateVar)}}  className={`z-40 cursor-pointer ${navBgTypeLocal=== 'music' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'music' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                             Music
                           </li>
 
-                          <li onClick={() => {closeDrawer_(); navigateMedia(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'media' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'media' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+                          <li onClick={() => {closeDrawer_(); navigateMedia(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'media' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'media' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                             Media
                           </li>
 
-                          <li onClick={() => {closeDrawer_(); navigateContact(navigateVar);}} className={`cursor-pointer ${navBgTypeLocal=== 'contact' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'contact' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+                          <li onClick={() => {closeDrawer_(); navigateContact(navigateVar);}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'contact' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'contact' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                             Contact
                           </li>
                            
@@ -110,27 +110,27 @@ export default function Navbar()  {
           <img onClick={() => {navigateHome(navigateVar)}} alt="home logo" src="/images/logo/LOGO.webp" ref={ripple} onPointerDown={rippleEvent} className='cursor-pointer size-[60px]' />
 
           <ul className='font-semibold lg:flex w-full justify-center hidden text-white gap-x-8'>
-              <li onClick={() => {navigateHome(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'home' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'home' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+              <li onClick={() => {navigateHome(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'home' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'home' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                 Home
               </li>
 
-              <li onClick={() => {navigateAbout(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'about' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'about' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+              <li onClick={() => {navigateAbout(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'about' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'about' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                 About
               </li>
 
-              <li onClick={() => {navigateTech(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'tech' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'tech' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+              <li onClick={() => {navigateTech(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'tech' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'tech' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                 Tech
               </li>
 
-              <li onClick={() => {navigateMusic(navigateVar)}}  className={`cursor-pointer ${navBgTypeLocal=== 'music' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'music' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+              <li onClick={() => {navigateMusic(navigateVar)}}  className={`z-40 cursor-pointer ${navBgTypeLocal=== 'music' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'music' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                 Music
               </li>
 
-              <li onClick={() => {navigateMedia(navigateVar)}} className={`cursor-pointer ${navBgTypeLocal=== 'media' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'media' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+              <li onClick={() => {navigateMedia(navigateVar)}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'media' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'media' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                 Media
               </li>
 
-              <li onClick={() => {navigateContact(navigateVar);}} className={`cursor-pointer ${navBgTypeLocal=== 'contact' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'contact' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
+              <li onClick={() => {navigateContact(navigateVar);}} className={`z-40 cursor-pointer ${navBgTypeLocal=== 'contact' ? 'bg-white text-blue-500': ''} hover:bg-white ${navBgTypeLocal!== 'contact' ? 'hover:text-yellow-800' : ''} p-2 px-4 rounded-full transition-colors duration-300 ease-linear`}>
                 Contact
               </li>
           </ul>

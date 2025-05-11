@@ -26,7 +26,7 @@ const Footer= () =>{
                 variants={cardVariantsUp4} 
                 className=" flex flex-col w-full mx-4">
                 
-                <h1 className="w-full text-center text-md font-bold text-white">VISTAGORA ENTERPRISE STUDIO</h1>
+                <h1 className="z-40 w-full text-center text-md font-bold text-white">VISTAGORA ENTERPRISE STUDIO</h1>
 
                 <motion.div 
                     viewport={{ once: true}}

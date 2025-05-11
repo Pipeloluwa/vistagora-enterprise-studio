@@ -27,7 +27,7 @@ export default function About () {
                         whileInView={{y:0, visibility:'visible'}}
                         transition={{duration:2, delay: 0.5}}
 
-                        className='md:text-5xl text-3xl flex w-full font-extrabold text-white'>
+                        className='z-40 md:text-5xl text-3xl flex w-full font-extrabold text-white'>
                         About Us
                     </motion.h1>  
 
@@ -37,7 +37,7 @@ export default function About () {
                         whileInView={{y:0, visibility:'visible'}}
                         transition={{duration:2, delay:0.5}}
 
-                        className='text-white flex md:max-w-[500px] w-full md:text-[16px] text-sm text-justify'>
+                        className='z-40 text-white flex md:max-w-[500px] w-full md:text-[16px] text-sm text-justify'>
                       At Vistagora Enterprise Studio, we believe in the transformative power of technology, the magic of music, and the captivating allure of visuals. We blend technology, music, and visual artistry to create a unique, innovative, and dynamic experience. Whether you're a client seeking the latest digital solutions, an artist looking to record your next hit, or a business in need of cutting-edge media graphics, we have the expertise and passion to bring your vision to life.
                     </motion.p>
                 </div>
@@ -52,11 +52,11 @@ export default function About () {
                         transition={{duration:2, delay:1}}
 
                         className='flex flex-col gap-y-3'>
-                        <h1 className='text-2xl font-semibold '>
+                        <h1 className='z-40 text-2xl font-semibold '>
                             Story
                         </h1>
 
-                        <p className='flex lg:max-w-[400px] w-full md:text-[16px] text-sm text-justify'>
+                        <p className='z-40 flex lg:max-w-[400px] w-full md:text-[16px] text-sm text-justify'>
                             Vistagora Enterprise Studio was born from a shared passion for innovation, creativity, and excellence. With a diverse team of experts in technology, music production, and graphic design, we have established ourselves as a leading force in the industry.
                         </p> 
                     </motion.div>
@@ -67,11 +67,11 @@ export default function About () {
                         transition={{duration:2, delay:1.5}}
 
                         className='flex flex-col gap-y-3'>
-                        <h1 className='text-2xl font-semibold'>
+                        <h1 className='z-40 text-2xl font-semibold'>
                             Mission
                         </h1>
 
-                        <p className='flex lg:max-w-[400px] w-full md:text-[16px] text-sm text-justify'>
+                        <p className='z-40 flex lg:max-w-[400px] w-full md:text-[16px] text-sm text-justify'>
                             Our mission is to empower creativity through technology, music, and media. We strive to provide exceptional services that inspire and elevate our clients' projects to new heights.
                         </p> 
                     </motion.div>

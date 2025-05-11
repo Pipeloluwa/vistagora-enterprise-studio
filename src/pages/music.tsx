@@ -18,7 +18,7 @@ export default function Music () {
     let bgColor= "bg-purple-500";
 
     const serviceProduct= [
-        {imageUrl: "/images/services/music-folder/1/full-track-production/track-icon.webp", title: "Full Track Production", description: "Complete music production from composition to final mix."},
+        {imageUrl: "/images/services/musicz-40 -folder/1/full-track-production/track-icon.webp", title: "Full Track Production", description: "Complete music production from composition to final mix."},
         {imageUrl: "/images/services/music-folder/1/mixing-mastering/mixing-table.webp", title: "Mixing and Mastering", description: "Professional mixing and mastering services to perfect your tracks."},
         {imageUrl: "/images/services/music-folder/1/music-promotion/promotion.webp", title: "Music Production", description: "Our talented team crafts melodies that resonate and lyrics that inspire."},
         {imageUrl: "/images/services/music-folder/1/song-writing-composition/songwriting.webp", title: "Songwriting and Composition", description: "Customized songwriting and composition services."},
@@ -49,7 +49,7 @@ export default function Music () {
                         whileInView={{y:0, visibility:'visible'}}
                         transition={{duration:1.5, delay: 0.5}}
 
-                        className='text-center justify-center md:text-5xl text-3xl flex w-full font-extrabold text-white'>
+                        className='z-40 text-center justify-center md:text-5xl text-3xl flex w-full font-extrabold text-white'>
                         Music Services & Training
                     </motion.h1>  
 
@@ -59,14 +59,14 @@ export default function Music () {
                         whileInView={{y:0, visibility:'visible'}}
                         transition={{duration:1.5, delay:0.5}}
 
-                        className='mx-auto text-center text-white flex md:w-[500px] md:text-[16px] text-sm '>
+                        className='z-40 mx-auto text-center text-white flex md:w-[500px] md:text-[16px] text-sm '>
                         Experience top-notch sound quality in our professional recording studios.
                     </motion.p>
                 </div>
                 
 
                                       
-                <div className='mt-[30px] page-padding mx-auto lg:max-w-[1100px] flex flex-col text-white w-full justify-between gap-x-4'>
+                <div className='z-10 mt-[30px] page-padding mx-auto lg:max-w-[1100px] flex flex-col text-white w-full justify-between gap-x-4'>
 
                     <motion.div
                         viewport={{once:true}}
@@ -75,7 +75,7 @@ export default function Music () {
                         transition={{duration:1.5, delay:1}}
 
                         className='flex flex-col w-full gap-y-3 p-8  bg-white/90 backdrop-blur text-black rounded-xl'>
-                        <h1 className='pb-6 text-center text-2xl font-semibold text-gray-700'>
+                        <h1 className='z-40 pb-6 text-center text-2xl font-semibold text-gray-700'>
                             Services
                         </h1>
 
@@ -110,11 +110,11 @@ export default function Music () {
                                                     <img src={items.imageUrl} alt="" className='w-[65px]'/>
                                                 </div>
 
-                                                <h1 className='text-center font-semibold'>
+                                                <h1 className='z-40 text-center font-semibold'>
                                                     {serviceProduct[index].title}
                                                 </h1>
 
-                                                <p className='flex text-center text-sm '>
+                                                <p className='z-40 flex text-center text-sm '>
                                                     {serviceProduct[index].description}
                                                 </p>
                                             </motion.div>
@@ -142,16 +142,16 @@ export default function Music () {
                         whileInView={{y:0, visibility:'visible'}}
                         transition={{duration:2}}
 
-                        className='flex flex-col w-full gap-y-3 backdrop-blur text-black rounded-xl'>
+                        className=' mt-[96px] flex flex-col w-full gap-y-3 backdrop-blur text-black rounded-xl'>
                         
-                        <div ref={trainingRef} className='mt-[96px] flex flex-col w-full gap-y-3 p-8  bg-white/90 backdrop-blur text-black rounded-xl'>
+                        <div ref={trainingRef} className='flex flex-col w-full gap-y-3 p-8  bg-white/90 backdrop-blur text-black rounded-xl'>
                         
                             <div className='pb-6 gap-y-2 flex flex-col w-full items-center justify-center'>
-                                <h1 className=' text-center text-2xl font-semibold text-gray-700'>
+                                <h1 className='z-40  text-center text-2xl font-semibold text-gray-700'>
                                     Training
                                 </h1> 
 
-                                <p className='mx-4 justify-center text-center '>
+                                <p className='z-40 mx-4 justify-center text-center '>
                                     Learn or upscale your skill in our quality training in any of the tech fields
                                 </p>
                             </div>
@@ -172,7 +172,7 @@ export default function Music () {
                                                 <img src={item.imageUrl} alt="" className='w-[65px]'/>
                                             </div>
 
-                                            <h1 className='text-center font-medium'>
+                                            <h1 className='z-40 text-center font-medium'>
                                                 {item.title}
                                             </h1>
 
@@ -191,7 +191,7 @@ export default function Music () {
                          
                     </motion.div>
 
-                    <p className='text-2xl text-center my-[50px]'>
+                    <p className='z-40 text-2xl text-center my-[50px]'>
                         For pricing, contact us !
                     </p>
 
