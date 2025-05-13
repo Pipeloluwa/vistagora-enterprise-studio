@@ -108,7 +108,7 @@ const Services = () => {
                     
                     <GlowCapture className='flex flex-col'>
                         <Glow color='purple' className='space-y-4'> 
-                            <h1 className='z-40 font-bold sm:text-7xl text-5xl glow:bg-black glow:text-blue-500'>
+                            <h1 className='font-bold sm:text-7xl text-5xl glow:bg-black glow:text-blue-500'>
                                 Quality
                             </h1>
                             <h3 className='-mt-2 sm:text-5xl text-4xl glow:bg-black glow:text-blue-500'>Tech Services</h3>     
@@ -126,7 +126,7 @@ const Services = () => {
 
                     <GlowCapture className='flex ml-4'>
                         <Glow color='purple' > 
-                        <ul className='z-40 glow:bg-black glow:text-blue-500 list-disc  mt-4 flex flex-col gap-y-2'>
+                        <ul className='glow:bg-black glow:text-blue-500 list-disc  mt-4 flex flex-col gap-y-2'>
                             <li>Data science</li>
                             <li>Data analysis</li>
                             <li>Frontend development</li>
@@ -139,7 +139,7 @@ const Services = () => {
                         
 
                     
-                    <Button onClick={() => {navigateTech(navigateVar)}} className='z-40 text-lg mr-[50px] big-button bg-white text-blue-800' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
+                    <Button onClick={() => {navigateTech(navigateVar)}} className='text-lg mr-[50px] big-button bg-white text-blue-800' placeholder={""} onPointerEnterCapture={ () => {}} onPointerLeaveCapture={ () => {}}>
                         Explore
                     </Button>
                 
